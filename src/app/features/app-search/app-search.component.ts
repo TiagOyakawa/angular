@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppSearchComponent {
 
+  /*
+   * Controla se o campo está aberto ou fechado
+   */
   isOpen = false;
 
+  /*
+   * Controla exibição do campo, entre as opções:aberto/fechado
+   */
   showHideField(): void {
     this.isOpen = !this.isOpen;
     console.log(this.isOpen)
