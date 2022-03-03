@@ -1,4 +1,6 @@
-<div class="search">
+<div class="search" (click)="showHideField()" [ngClass]="{'search--active':isOpen}">
     <input type="text" class="search__field" placeholder="Pesquisar">
-
+    <button class="search__button">
+        <span class="material-icons">search</span>
+    </button>
 </div>

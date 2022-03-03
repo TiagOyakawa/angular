@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-search',
   templateUrl: './app-search.component.html',
-  styleUrls: ['./app-search.component.sass']
+  styleUrls: ['./app-search.component.scss']
 })
-export class AppSearchComponent implements OnInit {
+export class AppSearchComponent {
 
-  constructor() { }
+  isOpen = false;
 
-  ngOnInit(): void {
+  showHideField(): void {
+    this.isOpen = !this.isOpen;
+    console.log(this.isOpen)
   }
-
 }
