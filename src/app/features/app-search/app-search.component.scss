@@ -1,0 +1,41 @@
+.search {
+    position: relative;
+    height: 50px;
+    &--active {
+        .search__field {
+            width: 300px;
+        }
+        .search__button {
+            transform: translateX(250px);
+        }
+    }
+    &__field {
+        font-size: 20px;
+        width: 30px;
+        ;
+        height: 30px;
+        margin: 0;
+        border: 0;
+        padding: 10px;
+        transition: width 0.3s ease;
+        border-radius: 30px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        border: 0;
+        background-color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: transform 0.3s ease;
+        &:focus {
+            outline: none;
+        }
+    }
+}
