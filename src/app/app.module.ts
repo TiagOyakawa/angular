@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppSearchComponent } from './features/app-search/app-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppButtonComponent } from './features/app-button/app-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppSearchComponent
+    AppSearchComponent,
+    AppButtonComponent
   ],
   imports: [
     BrowserModule,
