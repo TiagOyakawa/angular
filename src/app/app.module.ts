@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { AppSearchComponent } from './features/app-search/app-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppButtonComponent } from './features/app-button/app-button.component';
+import { AppTagComponent } from './features/app-tag/app-tag.component';
+import { AppModalComponent } from './features/app-modal/app-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppSearchComponent,
-    AppButtonComponent
+    AppButtonComponent,
+    AppTagComponent,
+    AppModalComponent
   ],
   imports: [
     BrowserModule,
