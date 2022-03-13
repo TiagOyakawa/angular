@@ -1,0 +1,19 @@
+<div class="frame" [ngClass]="{'frame--close':!hasFrame}">
+    <div class="modal" [ngClass]="{'modal--close':!isOpen}">
+        <div class="modal__content">
+            <div class="modal__icon">
+                <span class="material-icons">{{icon}}</span>
+            </div>
+            <h1 class="modal__title">{{title}}</h1>
+            <p>{{subtitle}}</p>
+            <button class="modal__button" (click)="closeModal()">
+              Fechar
+            </button>
+        </div>
+
+
+
+
+
+    </div>
+</div>
