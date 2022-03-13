@@ -1,16 +1,19 @@
-<div class="frame">
+<div class="frame" [ngClass]="{'frame--close':!hasFrame}">
     <div class="modal" [ngClass]="{'modal--close':!isOpen}">
-        <div class="modal__head">
-            <div class="modal__left">
+        <div class="modal__content">
+            <div class="modal__icon">
                 <span class="material-icons">{{icon}}</span>
-                <h1 class="modal__title">{{title}}</h1>
             </div>
-            <div class="modal__right" (click)="closeModal()">
-                <span class="material-icons">highlight_off</span>
-            </div>
-        </div>
-        <div class="modal__body">
+            <h1 class="modal__title">{{title}}</h1>
             <p>{{subtitle}}</p>
+            <button class="modal__button" (click)="closeModal()">
+              Fechar
+            </button>
         </div>
+
+
+
+
+
     </div>
 </div>

@@ -23,9 +23,12 @@ export class AppModalComponent {
   subtitle!:string;
 
   isOpen = true;
+  hasFrame = true;
 
   closeModal():void{
     this.isOpen = false;
-    console.log(this.isOpen)
+    setTimeout(() => {
+      this.hasFrame = false;
+    }, 700);
   }
 }
